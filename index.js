@@ -275,10 +275,52 @@
 //       expect(returnedValue).toEqual(false);
 //     });
   
-    it('returns false if all of the values are truthy', () => {
-      let returnedValue = onlyOne(true, 'yes!', 100);
-      expect(returnedValue).toEqual(false);
-    });
   
-  });
+// 05 Zero Dark Thirty
+
+// function zeroDarkThirty(originalValue){
+//     if(originalValue === 0){
+//       return NaN;
+//     }
+//     // explicitly coerce the originalValue to a string
+//     originalValue = String(originalValue);
+//     // create a new value
+//     let newValue = '';
+//     // loop throught the original value
+//     for(let i = 0; i < originalValue.length; i++){
+//       let currentChar = originalValue[i];
+//     // store the current character from the string in a variable
+//       if(currentChar !== '0'){
+//         // as long as the char isn't a zero, concat it onto the newValue string
+//         newValue += currentChar;
+//       }
+//     }
+//     // explicity coerce the newvalue to a number as its returned
+//     return Number(newValue);
+//   }
+  
+  
+//   describe('zeroDarkThirty', () => {
+  
+//     it('is a function', () => {
+//       expect(typeof zeroDarkThirty).toEqual('function');
+//     });
+  
+//     it('returns a number', () => {
+//       let returnedValue = zeroDarkThirty(10);
+//       expect(typeof returnedValue).toEqual('number');
+//     });
+  
+//     it('returns the original number after stripping out the zeros', () => {
+//       let returnedValue = zeroDarkThirty(10000000000);
+//       expect(returnedValue).toEqual(1);
+//     });
+  
+//     it('returns NaN if given an 0', () => {
+//       let returnedValue = zeroDarkThirty(0);
+//       expect(returnedValue).toEqual(NaN);
+//     });
+  
+//   });
+  
   
